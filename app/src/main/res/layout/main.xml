@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
+    android:layout_margin="10dp"
+    tools:context=".Main">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentView"
+        android:name="com.example.demo.Home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:weightSum="4">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_image_view"
+            android:src="@drawable/home"
+            android:layout_weight="1"
+            android:contentDescription="@string/home_icon" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_image_view"
+            android:layout_weight="1"
+            android:src="@drawable/search"
+            android:contentDescription="@string/home_icon" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/notify_image_view"
+            android:layout_weight="1"
+            android:src="@drawable/notifications"
+            android:contentDescription="@string/home_icon" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_image_view"
+            android:layout_weight="1"
+            android:src="@drawable/profile"
+            android:contentDescription="@string/home_icon" />
+
+    </LinearLayout>
+
+</RelativeLayout>

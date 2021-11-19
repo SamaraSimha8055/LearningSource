@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularImageView"><attr format="boolean" name="civ_border"/><attr format="dimension" name="civ_border_width"/><attr format="color" name="civ_border_color"/><attr format="color" name="civ_background_color"/><attr format="boolean" name="civ_shadow"/><attr format="color" name="civ_shadow_color"/><attr format="float" name="civ_shadow_radius"/><attr name="civ_shadow_gravity">
+        <flag name="center" value="1"/>
+        <flag name="top" value="2"/>
+        <flag name="bottom" value="3"/>
+        <flag name="start" value="4"/>
+        <flag name="end" value="5"/>
+    </attr></declare-styleable>
+</resources>
